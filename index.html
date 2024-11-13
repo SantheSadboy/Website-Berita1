@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Sevens.News</title>
+    <script src="news.js"></script>
+    <style>
+        *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #e4e3d5;
+}
+
+header {
+    background: #405b6c;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.search-form {
+    margin-top: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    width: 200px; /* Atur lebar sesuai kebutuhan */
+    border: 1px solid #405b6c;
+    border-radius: 4px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: #405b6c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-form button:hover {
+    background-color: #bd0000; /* Warna saat hover */
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+article {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+article:hover {
+    transform: scale(1.05);
+}
+
+.news-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(21, 45, 255, 0.1);
+}
+
+.news-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.news-item h2 {
+    font-size: 18px;
+    padding: 10px;
+}
+
+.news-item p {
+    font-size: 14px;
+    color: #777;
+    padding: 0 10px 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #306180;
+    color: #ffffff;
+    position: flex;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+     <button onclick="showMessageExternal('News')">Sevens.News</button>
+
+    
+    <header>
+        <h1>SEVENS.NEWS</h1>
+        <nav>
+            <ul>
+                <li><a href=>Beranda</a></li>
+                <li><a href=>Politik</a></li>
+                <li><a href=>Olahraga</a></li>
+                <li><a href=>Teknologi</a></li>
+                <li><a href=>Hot News</a></li>
+                <li><a href=>Viral</a></li>
+            </ul>
+        </nav>
+          <form action="#" method="get" class="search-form">
+                <input type="text" placeholder="Cari berita..." name="search" required>
+                <button type="submit">Cari</button>
+        </form>
+        </nav>
+    </header>
+
+    <main>
+        <section class="articles" id="articles">
+            <article>
+                <h2>Donald Trump menang Pilpres Amerika 2024</h2>
+                <p>1 hari yang lalu</p>
+                    <p>sevens.news.</p> 
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Polisi Jerat Tersangka Baru Mafia Akses Judol Komdigi Dengan Pasal Cuci Uang
+                </h2>
+                <p>3 jam yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>3 Owner Skincare Mengandung Merkuri di Makassar Jadi Tersangka</h2>
+                <p>29 menit yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Terungkap! Biang Kerok Susu Impor Banjiri RI</h2>
+                <p>1 jam yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Debat Ketiga Pilgub Sumut 2024: Jadwal, Tema, Panelis, dan Link Live</h2>
+                <p>5 hari yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Menteri Kontroversial Serukan Pencaplokan Tepi Barat Tahun 2025</h2>
+                <p>6 menit yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Hasil Rekor Kemendikdasmen: Zonasi Sejalan Pemerataan, Tapi Perlu Penyempurnaan </h2>
+                <p>6 jam yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>OJK Sebut Banyak Orang RI Sulit Akses Produk Keuangan
+                </h2>
+                <p>2 hari yang lalu</p>
+                <p>sevens.news.</p>
+                <img src="OJK.jpeg" alt ="OJK"/>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Bawaslu Minta Skrining Massa Pendukung Jelang Debat Kedua Pildup Lebak</h2>
+                <p>9 hari yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Komisi I DPR Usul RUU Penyiaran dan RUU TNI Masuk Prolegnas Jangka Menengah</h2>
+                <p>10 jam yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Perjalan Cinta Magan Fox-Machine Gun Kelly, Batal Tunangan, Kini Hamil</h2>
+                <p>1 menit yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            <article>
+                <h2>Viral Pria Marah-Marah Suruh Siswa SMA Menggonggong di Surabaya</h2>
+                <p>7 jam yang lalu</p>
+                <p>sevens.news.</p>
+                <button class="read-more">Baca Selengkapnya</button>
+            </article>
+
+            </section>
+    </main>
+
+    <footer>
+        <p>&copy; SEVENS NEWS 2024. All rights reserved.</p>
+    </footer>
+    
+    
+</body>
+</html>
